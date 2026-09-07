@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Bingo Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Bingo Game 🎉</h1>
+        
+        <div class="controls">
+            <button id="newGameBtn" class="btn btn-primary">New Game</button>
+            <button id="resetBtn" class="btn btn-secondary">Reset Board</button>
+            <div class="info">
+                <p>Numbers called: <span id="calledCount">0</span></p>
+                <p>Status: <span id="gameStatus">Ready</span></p>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="board" id="bingoBoard">
+                <!-- Bingo cards will be generated here -->
+            </div>
+
+            <div class="sidebar">
+                <h3>Called Numbers</h3>
+                <div class="called-numbers" id="calledNumbers">
+                    <!-- Called numbers will appear here -->
+                </div>
+                <button id="callNumberBtn" class="btn btn-success">Call Number</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
